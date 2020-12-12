@@ -9,7 +9,7 @@ body {
 	color: #fff;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 12px;
-	line-height: 1.4em; 
+	line-height: 1.4em;
 	background: url(images/background2.png) no-repeat;
 }
 
@@ -91,8 +91,8 @@ ul.list_bullet li a:hover { color: #240000 }
 #tooplate_middle {
 	height: 71px;
 	padding: 30px;
-	margin-bottom: 100px;
-	background: #0052cc;
+	
+	
 }
 #tooplate_main {
 	padding: 0 30px 80px;
@@ -141,10 +141,10 @@ ul.list_bullet li a:hover { color: #240000 }
 }
 #tooplate_slider_content p {
 	color: #fff;
-	font-size: 38px;
-	line-height: 40px;
+	font-size: 50px;
+	line-height: 70px;
 	margin-bottom: 50px;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: 'Rouge Script', cursive;
 }
 #tooplate_slider {
 	float: right;
