@@ -8,11 +8,11 @@ const gameBoard = document.getElementById('game-board');
 
 function main(currentTime) {
     if (gameOver) {
-        if (confirm("you lose. Press ok to restart")) {
+        if (confirm("You lose. Press ok to restart")) {
             window.location = '/snakeGame/';
         } else {
             window.location = '/';
-        };
+        }
     }
 
     window.requestAnimationFrame(main);
