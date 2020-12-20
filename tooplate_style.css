@@ -52,7 +52,7 @@ a:link, a:visited { color:#ff0000; text-decoration: none}
 a:hover { text-decoration:underline }
 a:hover,a:active { outline:none }
 
-a.more, form .more { display: block; margin-top: 10px; color: #d51919; width: 80px; height: 30px; line-height: 30px; text-align: center; background: url(images/tooplate_button_small.png) }
+a.more, form .more { display: block; margin-top: 10px; color: #fff; width: 80px; height: 30px; line-height: 30px; text-align: center; background: url(images/tooplate_button_small.png) }
 form .more { border: none; cursor: pointer }
 
 a.more_b { display: block; margin-top: 15px; color: #fff; text-shadow: 1px 1px 1px #000; font-size: 16px; width: 160px; height: 52px; line-height: 52px; text-align: center; background: url(images/tooplate_button_large.png); border: none }
