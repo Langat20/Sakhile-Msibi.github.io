@@ -1,89 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Portfolio</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-        <link href="tooplate_style.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="css/orman.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />	
-        <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
-        <script type="text/javascript">
-            ddsmoothmenu.init({
-	            mainmenuid: "tooplate_menu", //menu DIV id
-	            orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
-	            classname: 'ddsmoothmenu', //class added to menu's outer DIV
-	            //customtheme: ["#1c5a80", "#18374a"],
-	            contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
-            })
-        </script>
-        <link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
-        <script type="text/JavaScript" src="js/slimbox2.js"></script> 
-    </head>
-    <body>
-        <div id="tooplate_wrapper">
-	        <div id="tooplate_menu" class="ddsmoothmenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html" class="selected">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Sakhile Msibi</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">portfolio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
-                <br style="clear: left" />
-            </div> <!-- end of tooplate_menu -->
-            <div id="tooplate_main">
-        	<h1>Project Portfolio</h1>
-            <div id="gallery">
-                <ul class="nobullet">
-            	    <li>
-                        <img src="images/portfolio/snakeGame.png" class="img_border" alt="image" />
-                        <span>
-                            This is a classic snake game that I created using html, css and JavaScript. The snake game was popoluar in mobile phones before
-                            there were smartphones. Play the game <a href="./snakeGame/">here</a>. The snake is the green box and the food is red box.
-                            Use the up arrow to move up, the down arrow to move down, the left arrow to move left and the right arrow to move right. This is a desktop
-                            application. The code can be found <a href="https://github.com/Sakhile-Msibi/snakeGame">here</a>.
-                        </span>
-                    </li>
-                    <li>
-                        <img src="images/portfolio/egsnrc.png" class="img_border" alt="image" />
-                        <span>
-                            This project is a Monte-Carlo simulation of a 6 MeV photon beam irradiated on a 50 cm X 50 cm X 41.5 cm water region
-                            (crude simulation of a water phantom) containing a small air-filled region (crude simulation of an air-filled radiation detector).
-                            The simulation calculate the dose deposited in the water region and the air-filled region. The code of the simulation can be found
-                            <a href="https://github.com/Sakhile-Msibi/EGSnrc-simulation">here</a>. A video showing me creating the project can be found
-                            <a href="https://www.youtube.com/watch?v=01w8T-4GUlk">here</a>.
-                        </span>
-                    </li>
-                    <li>
-                        <img src="images/portfolio/quad.jpg" class="img_border" alt="image" />
-                        <span>
-                            This project is a Python algorithm that solve polynomial equations of degree less than or equal to two. The program returns the reduced
-                            form of the equation, the degree of the solution, the sign of the discriminant when there are two solutions and the solution(s).
-                            The code can be found <a href="https://github.com/Sakhile-Msibi/computorV1">here</a>. A video showing me solving polynomial equations
-                            using the program can be found <a href="https://www.youtube.com/watch?v=FrURhn814jM">here</a>.
-                        </span>
-                    </li>
-		    	</ul>
             </div>
-            <div class="clear"></div>
-        </div>
-	    <div id="tooplate_bottom">
-            <div id="tooplate_footer">
-    	        <div class="col_32 left">
-	    	        Copyright © 2021 Sakhile Msibi 
-        		</div>
-                <div class="col_3 right" style="text-align: right">
-                    <a href="https://twitter.com/Thembinkosi_198"><img src="images/twitter2.png" alt="Twitter" /></a>
-                    <a href="https://www.linkedin.com/in/sakhile-msibi/"><img src="images/linkedin.png" alt="Linkedin" /></a>
-                    <a href="https://github.com/Sakhile-Msibi"><img src="images/github.png" alt="Github" /></a>
-                    <a href="https://www.youtube.com/channel/UCP3lVXVvExO8jlEztMtneSg"><img src="images/youtube.png" alt="Youtube" /></a>
-		        </div>
-                <div class="clear"></div>
+            <div class="social text-gray">
+                <a href="https://twitter.com/Thembinkosi_198" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/sakhile-msibi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Sakhile-Msibi" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCP3lVXVvExO8jlEztMtneSg" target="_blank"><i class="fab fa-youtube-square"></i></a>
             </div>
         </div>
-    </body>
+    </nav>
+    <main>
+        <section class="site-title-portfolio">
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/portfolio/snakeGame.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Snake game</h3>
+                                <span>
+                                    This is a classic snake game that I created using html, css and JavaScript.
+                                    The snake game was popoluar in mobile phones before there were smartphones.
+                                    Play the game <a href="./snakeGame/" target="_blank">here</a>. The snake is
+                                    the green box and the food is red box. Use the up arrow to move up, the down
+                                    arrow to move down, the left arrow to move left and the right arrow to move right.
+                                    This is a browser application. The code can be found
+                                    <a href="https://github.com/Sakhile-Msibi/snakeGame" target="_blank">here</a>.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="./assets/portfolio/egsnrc.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Monte-Carlo simulation</h3>
+                                <span>
+                                    This project is a Monte-Carlo simulation of a 6 MeV photon beam irradiated
+                                    on a 50 cm X 50 cm X 41.5 cm water region (crude simulation of a water phantom)
+                                    containing a small air-filled region (crude simulation of an air-filled
+                                    radiation detector). The simulation calculate the dose deposited in the water
+                                    region and the air-filled region. The code of the simulation can be found
+                                    <a href="https://github.com/Sakhile-Msibi/EGSnrc-simulation" target="_blank">here</a>.
+                                    A video showing me creating the project can be found
+                                    <a href="https://www.youtube.com/watch?v=01w8T-4GUlk" target="_blank">here</a>.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="./assets/portfolio/quad.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Python algorithm</h3>
+                                <span>
+                                    This project is a Python algorithm that solve polynomial equations of
+                                    degree less than or equal to two. The program returns the reduced
+                                    form of the equation, the degree of the solution, the sign of the discriminant
+                                    when there are two solutions and the solution(s). The code can be found
+                                    <a href="https://github.com/Sakhile-Msibi/computorV1" target="_blank">here</a>.
+                                    A video showing me solving polynomial equations using the program can be found
+                                    <a href="https://www.youtube.com/watch?v=FrURhn814jM" target="_blank">here</a>.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="follow" data-aos="fade-right" data-aos-delay="200">
+                <h2>Follow</h2>
+                <p>Let us be social</p>
+                <div>
+                    <a href="https://twitter.com/Thembinkosi_198" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/sakhile-msibi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Sakhile-Msibi" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UCP3lVXVvExO8jlEztMtneSg" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright © 2021 All right reserved | Made by Sakhile Msibi
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+    <script src="./js/jquery3.5.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
 </html>
