@@ -185,6 +185,7 @@ main .site-title h1{
 main .site-title .btn{
     margin: 1.8rem;
     background: var(--sky);
+    transition: 360s ease-in-out;
 }
 
 main .site-title .btn:hover{
