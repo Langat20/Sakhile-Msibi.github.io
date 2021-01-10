@@ -206,6 +206,14 @@ main .site-title-about{
     justify-content: center;
 }
 
+main .site-title-coding{
+    background: url(../assets/Abract01.png);
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+}
+
 main .site-title-about .site-background-about{
     padding-top: 5rem;
     text-align: center;
@@ -225,6 +233,36 @@ main .site-title-about a{
 }
 
 /*site title---------about file------end*/
+
+/*site title---------coding file------start*/
+
+main .site-title-coding{
+    background: url(../assets/Abract01.png);
+    background-size: cover;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title-coding .site-background-about{
+    padding-top: 5rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    color: var(--bg-color);
+}
+
+main .site-title-coding h1{
+    margin: 0.3rem;
+}
+main .site-title-coding p{
+    color: var(--bg-color); 
+}
+
+main .site-title-coding a{
+    color: red; 
+}
+
+/*site title---------Coding file------end*/
 
 /*site title---------portfolio file------start*/
 
@@ -543,6 +581,10 @@ footer.footer .move-up span:hover{
         border-radius: 0% !important;
     }
 
+    main .site-title-coding{
+        height: 250vh !important;
+    }
+
     .site-content .sidebar .popular-post .post-info{
         display: none !important;
     }
@@ -572,11 +614,11 @@ footer.footer .move-up span:hover{
     }
 
     main .site-title-about{
-        /* background: url(../assets/Abract01.png);
-        background-size: cover; */
         height: 150vh !important;
-        /* display: flex;
-        justify-content: center; */
+    }
+
+    main .site-title-coding{
+        height: 350vh !important;
     }
 }
 
@@ -604,10 +646,10 @@ footer.footer .move-up span:hover{
     }
 
     main .site-title-about{
-        /* background: url(../assets/Abract01.png);
-        background-size: cover; */
         height: 300vh !important;
-        /* display: flex;
-        justify-content: center; */
+    }
+
+    main .site-title-coding{
+        height: 580vh !important;
     }
 }
