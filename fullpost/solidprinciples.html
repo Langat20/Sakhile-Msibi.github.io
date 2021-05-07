@@ -63,7 +63,8 @@
                     What is a good architecture design? I believe that a good architecture design must adhere to SOLID
                     principles. Every decision in the design of the architecture must be investigated whether it
                     adhere to the SOLID principles. SOLID is an acronomy of the subset of object-oriented design principles first promoted in 2000
-                    by Robert C. Martin in his article.<sup>1</sup>
+                    by Robert C. Martin in his article <a href="https://web.archive.org/web/20150906155800/http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf" target="_blank">
+                    Design Principles and Design Patterns</a>.<sup>1</sup>
                     <ul> 
                         <li>Single-responsibility principle</li> 
                         <li>Open-close principle</li> 
@@ -80,7 +81,7 @@
                     This principle is easy  to understand and implement but you find projects that contains API end points,
                     application logic and SQL statements in one class. This shows that there was disregard of SOLID principles
                     during architecture design. The problem in the example is that the class becomes too large and difficult
-                    to understand. It would bew difficult to understand which part of the code deals with the API layer,
+                    to understand. It would be difficult to understand which part of the code deals with the API layer,
                     the service layer (application logic) and the database layer (SQL). It also makes it difficult to make
                     changes in one part of the code without affecting the other parts. In the example if you were to change
                     from using a SQL database to a no-SQL database you would also affect the service layer and the API layer.
