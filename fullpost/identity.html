@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Blog Post</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Sakhile Msibi</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../portfolio.html">portfolio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../blog.html">Blog</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://twitter.com/Thembinkosi_198" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/sakhile-msibi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Sakhile-Msibi" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCP3lVXVvExO8jlEztMtneSg" target="_blank"><i class="fab fa-youtube-square"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="site-title-coding">
+            <div class="site-background-about" data-aos="fade-up" data-aos-delay="1000">
+                <h1>ASP.NET Core Identity</h1>
+                <p>
+                    Recenty I have been using C# and .NET Core Framework to build backend Web APIs. I have used these Web APIs
+                    in web applications that requires a user to first register and login to the application before they are 
+                    able to use the application. To create the registration and login functionality in a Web API, one usually
+                    has to create contollers which contains endpoints of the API that communicate with the frontend,
+                    services which contains the logic of the application and sql commands which communicate with the
+                    database. The other way is to use ASP.NET Core identity which is an API that support user interface login functionality,
+                    manage users, passwords, roles, tokens, email confirmation and more to ASP.NET Core web applications. The
+                    ASP.NET Core identity API is not related to the Microsoft identity platform, which is an evolution of 
+                    the Azure Active Directory developer platform.
+                </p>
+                <p>
+                    Using the ASP.NET Core identity API still requires the creation of controllers and an identity services.
+                    The identity service is where the identity API is implemented. The identity API has two very useful classes,
+                    namely, the ASP.NET Core identity UserManager class and the ASP.NET Core identity RoleManager class. The 
+                    UserManager class is used to manage users, i.e., registration of users, updating user information, etc. 
+                    The RoleManager class is used to manage roles, i.e., create roles and assign users to those roles. These
+                    roles can be an admin role of the application, user role or any role that one want to create in the application.
+                    These roles can be used to allow certain users access to certain endpoints, that is, functionality of the 
+                    application and deny access to those that are not assigned that role. This is called role based access.
+                    A simple example of how role based access is used in web applications is allowing certain users, "admins",
+                    privilege to suspend accounts of other users, e.g. Twitter admins can suspend user's Twitter accounts, one famous or 
+                    infamous example depending on who you ask being the suspension of a Twitter account of a certain Former
+                    president.
+                </p>
+                <p>
+                    The primary package for for identity is Microsoft.AspnetCore.Identity. The UserManager class has the following
+                    important methods
+
+                    <style>
+                        table {
+                          font-family: arial, sans-serif;
+                          border-collapse: collapse;
+                          table-layout: fixed ;
+                          width: 50%;
+                        }
+
+                        .center {
+                        margin-left: auto;
+                        margin-right: auto;
+                        }
+                        
+                        td, th {
+                          border: 1px solid #dddddd;
+                          text-align: left;
+                          padding: 8px;
+                        }
+                        
+                        tr:nth-child(even) {
+                          background-color: #dddddd;
+                        }
+                    </style>
+                        <table class="center">
+                          <tr>
+                            <th>Nane</th>
+                            <th>Description</th>
+                          </tr>
+                          <tr>
+                            <td>CreateAsync(TUser)</td>
+                            <td>Creates a user with no password</td>
+                          </tr>
+                          <tr>
+                            <td>CreateAsync(TUser, String)</td>
+                            <td>Creates a user with the given password</td>
+                          </tr>
+                          <tr>
+                            <td>DeleteAsync(TUser)</td>
+                            <td>Deletes a user</td>
+                          </tr>
+                          <tr>
+                            <td>FindByNameAsync(String)</td>
+                            <td>Finds a user by user name</td>
+                          </tr>
+                          <tr>
+                            <td>AddToRoleAsync(TKey, String)</td>
+                            <td>Adds a user to a role</td>
+                          </tr>
+                          <tr>
+                            <td>GeneratePasswordResetTokenAsync(TKey)</td>
+                            <td>Generates a password reset token for the user using the UserTokenProvider</td>
+                          </tr>
+                        </table>
+                        
+                        
+                </p>
+                <p>
+                    The RoleManager class has similar methods to create roles, delete roles, find roles by user name, etc.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="follow" data-aos="fade-right" data-aos-delay="200">
+                <h2>Follow</h2>
+                <p>Let us be social</p>
+                <div>
+                    <a href="https://twitter.com/Thembinkosi_198" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/sakhile-msibi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Sakhile-Msibi" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UCP3lVXVvExO8jlEztMtneSg" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright © 2021 All right reserved | Made by Sakhile Msibi
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+    <script src="../js/jquery3.5.1.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
