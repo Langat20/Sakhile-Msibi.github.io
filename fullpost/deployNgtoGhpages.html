@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Blog Post</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Sakhile Msibi</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../portfolio.html">portfolio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../blog.html">Blog</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://twitter.com/Thembinkosi_198" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/sakhile-msibi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Sakhile-Msibi" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCP3lVXVvExO8jlEztMtneSg" target="_blank"><i class="fab fa-youtube-square"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="site-title-coding">
+            <div class="site-background-about" data-aos="fade-up" data-aos-delay="1000">
+                <h1>A guide on how to deploy Angular applications to GitHub Pages</h1>
+                <p>
+                    You can deploy an Angular application to a remote server such as GitHub Pages, Azure, Aws, Firebase, ect. This 
+                    article shows how to deploy an Angular application to GitHub Pages. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages" target="_blank">GitHub Pages</a> 
+                    is a free website hosting service that takes HTML, CSS and JavaScript files from a GitHub repository.
+                    <a href="https://angular.io/" target="_blank">Angular</a> is frontend 
+                    TypeScript framework.  Angular allows you to create the frontend of applications such as websites
+                    using HTML, CSS and JavaScript.
+
+                </p>
+                <p>
+                    In order to deploy your Angular application to GitHub Pages you have to first create a GitHub Pages site 
+                    repository on GitHub. This repository will host your GitHub Pages site. My GitHub Pages site is
+                    <a href="https://sakhile-msibi.github.io./" target="_blank">https://sakhile-msibi.github.io./</a> and
+                    my GitHub Pages site repository is <a href="https://github.com/Sakhile-Msibi/Sakhile-Msibi.github.io" target="_blank">sakhile-msibi.github.io</a>.
+                    The Angular application folder must be created inside the GitHub Pages site repository in order for the 
+                    application to be deployed using GitHub Pages.
+
+                </p>
+                <p>
+                   Once you have created a GitHub Pages site repository and pushed your Angular application files inside the
+                   Angular application folder you can use the following commands on the Angular-cli (command line interface).
+                </p>
+                <p>
+                    (1) npm i angular-cli-ghpages --save-dev<br>
+                    This command will install angular-cli-ghpages globally in your machine. This is only done once.
+                </p>
+                <p>
+                    (2) ng build --prod --base-href "https://GitHubUserName.github.io/GitHubfolderName/"<br>
+                    Note that <q>GitHubUserName.github.io</q> is the GitHub Pages site repository and <q>GitHubfolderName</q>
+                     is the Angular application folder. This command is used to build the Angular application for use in production.
+                </p>
+                <p>
+                    (3) npx angular-cli-ghpages --dir=dist/Project-name <br>
+                    This command deploys the application.
+                </p>
+                <p>
+                    In your Angular application a dist/Project-name directory will be created. Go inside the Project-name folder and
+                    copy all the files inside and paste the in a separate folder, let call it temp folder. Delete all the files and
+                    folders inside the Angular application folder and paste the content you saved inside the temp folder. This means
+                    you Angular application folder will now only have the files and folder that was created at dist/Project-name.
+                    Commit and push the changes to GitHub and visit your GitHub Pages site to see your Angular application live &#128526.
+                </p>
+                <p>
+                    I have deployed an Angular application to GitHub Pages and I will show you how I used the above instructions
+                    to deploy the application. I did not use the first command because I had already installed angular-cli-ghpages
+                    in my laptop.
+                </p>
+                <p>
+                    (2)  ng build --prod --base-href "https://Sakhile-Msibi.github.io/ngVideoGameDB/" <br>
+                    (3) npx angular-cli-ghpages --dir=dist/ngVideoGameDB <br>
+                    The original Angular application files and folders can be found <a href="https://github.com/Sakhile-Msibi/ngVideoGameDB" target="_blank">here</a>.
+                    After deleting everything inside the Angular application folder and replcing it with the content inside the dist/ngVideoGameDB, 
+                    the Angular application folder content can be found <a href="https://github.com/Sakhile-Msibi/Sakhile-Msibi.github.io/tree/master/ngVideoGameDB" target="_blank">here</a>.
+                    You will notes that the files and folders inside the Angular application folder after it was deployed are very few compared to
+                    before it was deployed. The reason for that is that when you deploy an application to a remote server it is compressed to 
+                    it smallest size possible. The application can be viewed <a href="https://sakhile-msibi.github.io./ngVideoGameDB/" target="_blank">here</a>.
+                </p>
+                <p>
+                    The application uses a public API to create a video game database. The API key token will expire in about a month from
+                    today (09/07/2021), however I can always create a new token. The code of the application can be found <a href="https://github.com/Sakhile-Msibi/ngVideoGameDB" target="_blank">here</a>.
+                    &#9996 &#129409
+                </p>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="follow" data-aos="fade-right" data-aos-delay="200">
+                <h2>Follow</h2>
+                <p>Let us be social</p>
+                <div>
+                    <a href="https://twitter.com/Thembinkosi_198" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/sakhile-msibi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Sakhile-Msibi" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UCP3lVXVvExO8jlEztMtneSg" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright © 2021 All right reserved | Made by Sakhile Msibi
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+    <script src="../js/jquery3.5.1.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
