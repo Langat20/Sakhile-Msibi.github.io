@@ -266,6 +266,38 @@ main .site-title-coding a{
 
 /*site title---------Coding file------end*/
 
+/*site title---------ngdeploy file------start*/
+
+main .site-title-ngdeploy{
+    background: url(../assets/Abract01.png);
+    background-size: cover;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title-ngdeploy .site-background-about{
+    padding-top: 5rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    color: var(--bg-color);
+}
+
+main .site-title-ngdeploy h1{
+    margin: 0.3rem;
+}
+main .site-title-ngdeploy p{
+    color: var(--bg-color); 
+}
+
+main .site-title-ngdeploy a{
+    color: red; 
+}
+
+/*site title---------ngdeploy file------end*/
+
+
+
 /*site title---------portfolio file------start*/
 
 main .site-title-portfolio{
@@ -518,33 +550,6 @@ footer.footer .container h2{
     color: var(--white);
 }
 
-/* footer.footer .newsletter .form-element{
-    background: black;
-    display: inline-block;
-}
-
-footer.footer .newsletter .form-element input{
-    padding: 0.5rem 0.7rem;
-    border: none;
-    background: transparent;
-    color: var(--white);
-    font-family: var(--Josefin);
-    font-size: 1rem;
-    width: 74%;
-}
-
-footer.footer .newsletter .form-element span{
-    background: var(--sky);
-    padding: 0.5rem 0.7rem;
-    cursor: pointer;
-}
-
-footer.footer .instagram div > img{
-    display: inline-block;
-    width: 25%;
-    height: 50%;
-    margin: 0.3rem 0.4rem;
-} */
 
 footer.footer .follow div i{
     color: var(--white);
@@ -555,10 +560,6 @@ footer.footer .rights{
     justify-content: center;
     font-family: var(--Josefin);
 }
-
-/* footer.footer .rights h4{
-    color: var(--white);
-} */
 
 footer.footer .move-up{
     position: absolute;
@@ -585,6 +586,10 @@ footer.footer .move-up span:hover{
 
     main .site-title-coding{
         height: 250vh !important;
+    }
+
+    main .site-title-ngdeploy{
+        height: 350vh !important;
     }
 
     .site-content .sidebar .popular-post .post-info{
@@ -622,6 +627,10 @@ footer.footer .move-up span:hover{
     main .site-title-coding{
         height: 350vh !important;
     }
+
+    main .site-title-ngdeploy{
+        height: 350vh !important;
+    }
 }
 
 /*Viewpoint less than 520px*/
@@ -652,6 +661,10 @@ footer.footer .move-up span:hover{
     }
 
     main .site-title-coding{
+        height: 580vh !important;
+    }
+
+    main .site-title-ngdeploy{
         height: 580vh !important;
     }
 }
