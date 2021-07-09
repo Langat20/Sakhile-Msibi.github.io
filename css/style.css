@@ -665,6 +665,12 @@ footer.footer .move-up span:hover{
     }
 
     main .site-title-ngdeploy{
-        height: 580vh !important;
+        height: 380vh !important;
+        
+    }
+
+    
+    main .site-title-ngdeploy .site-background-about{
+        width: 100% !important;
     }
 }
