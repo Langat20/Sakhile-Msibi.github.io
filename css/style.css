@@ -200,10 +200,68 @@ main .site-title .btn:hover{
 
 /*site title---------about file------start*/
 
+.about-img{
+    margin-left: -100px;
+    right: -60px;
+   }
+
+   .display-1{
+     font-size: 160px;
+     font-weight: 1000;
+     
+   }
+    
+   .position-absolute{
+     font-weight: 700;
+     
+   }
+   
+   .typed-cursor {
+     font-size: 45px;
+     color: #ffffff;
+   }
+   
+   .blue{
+     background-color: #1c5ce6;
+     color: #ffffff;
+   }
+   .btn{
+     border: 2px solid rgb(29, 105, 247);
+   } 
+   .btn-white{
+     background-color: #ffffff;
+     border:2px solid #ffffff;
+   }
+   .btn-blue{
+     border: 2.4px solid #ffffff;
+     color: #ffffff;
+   }
+   /* @media (max-width: 700px) {
+     .about-img{
+       margin-left: 20px;
+       right: 0px;
+       top: 30px;
+      }
+   } */
+
+   /*===================== Progress Bar ====================*/
+
+.progress {
+  border-radius: 10px;
+}
+
+.progress .progress-bar {
+  width: 0px;
+  border-radius: 10px;
+  transition: 2s;
+}
+
+
+
 main .site-title-about{
     background: url(../assets/Abract01.png);
     background-size: cover;
-    height: 80vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
 }
