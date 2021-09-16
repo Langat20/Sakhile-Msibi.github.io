@@ -650,6 +650,10 @@ footer.footer .move-up span:hover{
         height: 580vh !important;
     }
 
+    main .site-title-about{
+        height: 250vh !important;
+    }
+
     .site-content .sidebar .popular-post .post-info{
         display: none !important;
     }
@@ -679,8 +683,9 @@ footer.footer .move-up span:hover{
     }
 
     main .site-title-about{
-        height: 150vh !important;
+        height: 300vh !important;
     }
+    
 
     main .site-title-coding{
         height: 350vh !important;
